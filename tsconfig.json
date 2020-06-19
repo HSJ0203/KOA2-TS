@@ -1,0 +1,130 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        // 允许编译javascript文件
+        "allowUnreachableCode": true,
+        // 不报告执行不到的代码错误。
+        "allowUnusedLabels": false,
+        // 不报告未使用的标签错误
+        "alwaysStrict": true,
+        // 以严格模式解析并为每个源文件生成"use strict"语句
+        "baseUrl": ".",
+        // 解析非相对模块名的基准目录
+        "checkJs": true,
+        // 在javascript文件中报告错误
+        // 只有当"allowJs"置为true时才能指定
+        // "declaration": true,
+        // 生成相应的.d.ts文件
+        // 不能与isolatedModules同时指定
+        // "declarationDir": "dist/declaration",
+        // 生成声明文件的输出路径
+        // 只有当"declaration"置为true时才能指定
+        // 且不能与outFile同时指定
+        "disableSizeLimit": true,
+        // 禁用JavaScript工程体积大小的限制
+        "downlevelIteration": true,
+        // Provide full support for
+        // iterables in for..of, spread and destructuring
+        // when targeting ES5 or ES3
+        "diagnostics": true,
+        // 显示诊断信息
+       
+        "forceConsistentCasingInFileNames": true,
+        // 禁止对同一个文件的不一致的引用
+        "importHelpers": true,
+        // 从 tslib 导入辅助工具函数（如 __extends， __rest等）
+        "incremental": true,
+        // 启用增量编译
+        "inlineSourceMap": false,
+        // 生成单个的sourcemaps文件
+        "inlineSources": true,
+        // 将代码与sourcemaps生成到一个文件中，
+        // 要求同时设置了 --inlineSourceMap或 --sourceMap属性。
+        "isolatedModules": true,
+        // 将每个文件作为单独的模块进行转译(Transpile)
+        // (与“ts.transpileModule”类似）
+        // 不可与outFile或declaration同时指定
+        "jsx": "react",
+        // 在.tsx文件里支持JSX
+        "listEmittedFiles": false,
+        // 打印出编译后生成文件的名字
+        "listFiles": false,
+        // 编译过程中打印文件名
+        "module": "CommonJS",
+        // 指定生成哪个模块系统代码：
+        // "None"， "CommonJS"， "AMD"，
+        // "System"， "UMD"， "ES6"或 "ES2015"
+        // 只有 "AMD"和 "System"能和 --outFile一起使用。
+        // "ES6"和 "ES2015"可使用在目标输出为 "ES5"或更低的情况下
+        "moduleResolution": "node",
+        // 决定如何处理模块。"node"对应于Node.js/io.js
+        "noEmitHelpers": true,
+        // 不在输出文件中生成用户自定义的帮助函数代码，如 __extends
+        "noErrorTruncation": true,
+        // 不截断错误消息
+        "noFallthroughCasesInSwitch": true,
+        // 报告switch语句的fallthrough错误（即不允许switch的case语句贯穿）
+        "noImplicitAny": true,
+        // 在表达式和声明上有隐含的any类型时报错
+        "noImplicitReturns": true,
+        // 不是函数的所有返回路径都有返回值时报错
+        "noImplicitThis": true,
+        // 当this表达式的值为any类型的时候，生成一个错误
+        "noImplicitUseStrict": false,
+        // 模块输出中是否不包含"use strict"指令
+        "noStrictGenericChecks": false,
+        // 是否禁用在函数类型里对泛型签名进行严格检查
+        "noUnusedLocals": false,
+        // 若有未使用的局部变量则抛错
+        "noUnusedParameters": false,
+        // 若有未使用的参数则抛错
+        "outDir": "dist",
+        "paths": {
+            "*": [
+                "node_modules/*"
+            ]
+        },
+        "preserveConstEnums": true,
+        // 保留const和enum声明
+        "pretty": true,
+        // 使用颜色和上下文给错误和信息添加样式（实验性）
+        "removeComments": true,
+        // 删除所有注释，除了以/!*开头的版权信息
+        "sourceMap": true,
+        // 生成相应的 .map文件
+        // 不能与inlineSourceMap同时指定
+        "strict": true,
+        // 启用所有严格类型检查选项。
+        // 启用strict相当于启用
+        // noImplicitAny,noImplicitThis,alwaysStrict，
+        // strictBindCallApply,
+        // strictNullChecks,
+        // strictFunctionTypes,
+        "strictPropertyInitialization":false,
+        "strictNullChecks": true,
+        // 在严格的null检查模式下，
+        // null和undefined值不包含在任何类型里，
+        // 只允许用它们自己和any来赋值（undefined可以赋值到void除外）
+        "strictFunctionTypes": false,
+        //是否禁用函数参数双向协变检查
+        "lib": ["es5", "es6"],
+        "target": "ES6",
+        // 指定ECMAScript目标版本
+        // "ES3"（默认）， "ES5"， "ES6"/"ES2015"，
+        // "ES2016"， "ES2017"或 "ESNext"
+        "traceResolution": false,
+        // 生成模块解析日志信息
+        "emitDecoratorMetadata": true,
+        // 开启元数据反射库 reflect-metadata
+        "experimentalDecorators": true,
+        // 启用实验性的ES装饰器
+        // "esModuleInterop":false,
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
