@@ -8,7 +8,7 @@
 
 **请安装 NodeJS V10+ 版本  && GIT环境**
 
-1. git clone http://10.10.10.39:30000/huangshengjie/KOA2-TS.git
+1. git clone https://github.com/HSJ0203/KOA2-TS.git
 
 2. cd KOA2-TS
 
