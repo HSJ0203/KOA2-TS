@@ -6,7 +6,7 @@
 
 #### Usage
 
-**请安装 NodeJS V10+ 版本  && GIT环境**
+**请安装 NodeJS V10+ 版本  && GIT环境  && Redis服务**
 
 1. git clone https://github.com/HSJ0203/KOA2-TS.git
 
